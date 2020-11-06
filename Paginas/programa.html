@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorstcut icon" type="image/png" href="../Imagenes/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css">
     <title>Serie Pelicula Telediario Deporte Concursos Otros</title>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="programa.html">Recomendado</a></li>
+            <li><a href="programa.html" class="active">Recomendado</a></li>
             <li><a href="votaciones.html">Valoraciones</a></li>
         </ul>
     </nav>
 </head>
+
 <body>
+
     <h2>Nombre del programa</h2>
-    <p><strong>Canal:</strong> El que sea<br><strong>Programa:</strong> El que esté programado (temporada x capitulo)</p>
-    <a href="../Imagenes/newspaper.jpg" target="_blank"><img src="../Imagenes/newspaper.jpg" alt="Imagen representativa del programa" width="200px" height="150px"></a>
-    <p>Aquí viene una pequeña descripción o resumen del programa a emitir. El programa tendrá su <em>nombre en cursiva (temporada x capitulo)</em> para facilitar su comprensión. Este formato es genérico para cualquier programa (documental, deporte, informativos, concursos...), que tendrá más o menos imágenes complementarias y distinta imagen representativa según el programa. Lo ideal es que este texto esté a la derecha de la imagen representativa (mediante CSS)</p>
-    <img src="../Imagenes/docs.jpg" alt="Imagen 1 del progrma en cuestión, mismo episodio u otros previos">
-    <img src="../Imagenes/popcorn.jpg" alt="Imagen 2 del programa">
+    <p class="principal"><strong>Canal:</strong> El que sea<br><strong>Programa:</strong> El que esté programado (temporada x capitulo)
+    </p>
+    <div><a href="../Imagenes/newspaper.jpg" target="_blank"><img src="../Imagenes/newspaper.jpg"
+                alt="Imagen representativa del programa" width="200px" height="150px"></a>
+        <p class="principal" id="pegado">Aquí viene una pequeña descripción o resumen del programa a emitir. El programa tendrá su <em>nombre en
+                cursiva (temporada x capitulo)</em> para facilitar su comprensión. Este formato es genérico para
+            cualquier programa (documental, deporte, informativos, concursos...), que tendrá más o menos imágenes
+            complementarias y distinta imagen representativa según el programa. Lo ideal es que este texto esté a la
+            derecha de la imagen representativa (mediante CSS)</p>
+    </div>
+    <div>
+        <img src="../Imagenes/docs.jpg" alt="Imagen 1 del progrma en cuestión, mismo episodio u otros previos">
+        <img src="../Imagenes/popcorn.jpg" alt="Imagen 2 del programa">
+    </div>
 </body>
+
 </html>

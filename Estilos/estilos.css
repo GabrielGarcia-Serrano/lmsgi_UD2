@@ -1,0 +1,91 @@
+/* Modificaciones HTML 
+Meter selectores en las etiquetas:
+    - id --> cosas individuales
+    - class --> comun a varios
+
+*/
+
+/* Modificaciones CSS 
+Meter comentarios para los estilos
+Reglas no repetidas
+Reglas bien puestas y que se usen todas
+
+Necesidades:
+    - unidades de medida para el texto --> distintos tamaños de letra --> programa.html
+    - modificar margin y padding --> 
+    - usar la etiqueta div --> programa.html --> imagen + texto al lado + imagenes abajo
+    - modificar el ancho de una caja --> 
+    - centrar elementos --> tabla principal
+    - modificar los estilos de las listas ordeadas y desordenadas
+*/
+
+body {
+    background-color: lavender;
+}
+
+/* navegador */
+nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+    background-color: lightcyan;
+}
+  
+.active {
+    background-color: lightblue;
+}
+
+/* Fondos de color y elementos de la tabla */
+table {
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+    position: center; /* quiero centrar la tabla */
+}
+
+table tr th {
+    padding: 10px;
+}
+
+#pares {
+    background-color: lightblue;
+}
+
+#impares {
+    background-color: lightcyan;
+}
+
+/* En relación a la página de un programa en concreto */
+.principal {
+    font-size: larger;
+}
+
+#pegado {
+    float: left;
+    padding: 15 px;
+}
+
+/* Lista ordenada */
+ol {
+    color: darkorange;
+}
