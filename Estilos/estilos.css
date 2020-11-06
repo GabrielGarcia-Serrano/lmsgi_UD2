@@ -1,29 +1,22 @@
-/* Modificaciones HTML 
-Meter selectores en las etiquetas:
-    - id --> cosas individuales
-    - class --> comun a varios
-
-*/
-
-/* Modificaciones CSS 
-Meter comentarios para los estilos
-Reglas no repetidas
-Reglas bien puestas y que se usen todas
-
-Necesidades:
-    - unidades de medida para el texto --> distintos tamaños de letra --> programa.html
-    - modificar margin y padding --> 
-    - usar la etiqueta div --> programa.html --> imagen + texto al lado + imagenes abajo
-    - modificar el ancho de una caja --> 
-    - centrar elementos --> tabla principal
-    - modificar los estilos de las listas ordeadas y desordenadas
-*/
-
+/* Color común de fondo */
 body {
     background-color: lavender;
 }
 
-/* navegador */
+/* Alineación centrada de titulos */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Barra de navegación horizontal y que se remarque tanto la actual como la indicada*/
 nav {
     list-style-type: none;
     overflow: hidden;
@@ -60,13 +53,12 @@ table {
     background-color: white;
     margin: 0px;
     width: 100%;
-    position: center; /* quiero centrar la tabla */
 }
 
 table tr th {
-    padding: 10px;
+    padding: 7px;
 }
-
+/* darle color cebreado a la tabla, pero sólo a los canales */
 #pares {
     background-color: lightblue;
 }
@@ -75,17 +67,34 @@ table tr th {
     background-color: lightcyan;
 }
 
-/* En relación a la página de un programa en concreto */
+/* Destacar ligeramente el programa para emitir y la cadena */
 .principal {
     font-size: larger;
 }
 
+/* Imagen representativa encuadrada por el texto descriptivo */
 #pegado {
-    float: left;
-    padding: 15 px;
+    display: inline-block;
+    vertical-align: text-top;
 }
 
-/* Lista ordenada */
-ol {
-    color: darkorange;
+/* Varias imagenes en una misma línea, en este caso dos por línea */
+.juntado {
+    display: inline-block;
+    width: 47%;
+    padding: 7px;
+}
+
+/* Lista desordenada para las votaciones */
+#votacion{
+    width: 20%;
+    list-style-type: square;
+}
+
+.programVoted {
+    margin: 5px;
+}
+
+ul li:hover {
+    font-size: x-large;
 }
